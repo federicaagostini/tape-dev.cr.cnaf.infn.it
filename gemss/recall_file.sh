@@ -40,6 +40,6 @@ expdate=$(($now+$PIN_TIME))
 if (( RANDOM % 100 > 7 )); then
   attr -s storm.pinned -V $expdate "$DST_FILE"
 else
-  echo "Unable add pin to file $DST_FILE"
+  echo "Unable to add pin to file $DST_FILE"
   exit 1
 fi
