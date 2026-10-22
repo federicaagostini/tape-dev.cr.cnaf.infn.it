@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ex
 
+fetch-crl --verbose
+
 for c in /etc/grid-security/certificates/*.pem; do
   cp $c /etc/pki/ca-trust/source/anchors/
 done

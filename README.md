@@ -5,4 +5,4 @@ testing [StoRM Tape](https://baltig.infn.it/cnafsd/storm-tape) and possibly [Sto
 
 Basically, only the machine certificate is outside this repo.
 
-Before installation, some manual step needs to be done (in particular, set proper permission for user 1000 to SA `dteam` and `test.vo`).
+Before installation, some manual step needs to be done (see the [Installation](./doc/installation.md) guide).
