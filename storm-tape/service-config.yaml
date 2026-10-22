@@ -4,9 +4,6 @@ storage-areas:
   access-point: /test.vo
   policies:
   - description: Stage and archiveinfo aperations allowed to storage.stage:/ and xfer roles of test.vo
-    actions:
-    - stage
-    - archiveinfo
     principals:
     - jwt-scope:
         iss: https://iam-dev.cloud.cnaf.infn.it/
@@ -26,9 +23,6 @@ storage-areas:
   access-point: /dteam
   policies:
   - description: Stage and archiveinfo aperations allowed to storage.stage:/ and xfer roles of dteam
-    actions:
-    - stage
-    - archiveinfo
     principals:
     - jwt-scope:
         iss: https://dteam-auth.cern.ch/
