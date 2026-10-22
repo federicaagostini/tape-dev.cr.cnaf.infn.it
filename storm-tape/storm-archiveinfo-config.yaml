@@ -1,0 +1,11 @@
+storage-areas:
+- name: test.vo
+  root: /tmp/disk/test.vo
+  access-point: /test.vo
+
+telemetry:
+  service-name: storm-tape:api
+  tracing-endpoint: https://otello.cloud.cnaf.infn.it/collector/v1/traces
+
+port: 8081
+mirror-mode: on

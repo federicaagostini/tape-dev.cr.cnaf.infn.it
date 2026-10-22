@@ -31,7 +31,7 @@ services:
       - TZ=Europe/Rome
 
     volumes:
-      - ./storm-tape/archiveinfo-config.yaml:/storm-tape/storm-tape.conf
+      - ./storm-tape/storm-archiveinfo-config.yaml:/storm-tape/storm-tape.conf
       - /storage/disk:/tmp/disk
       
     entrypoint: storm-tape-debug -c /storm-tape/storm-tape.conf

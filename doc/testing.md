@@ -116,7 +116,7 @@ $ curl https://tape-dev.cr.cnaf.infn.it:8443/api/v1/archiveinfo -H "Authorizatio
 ]
 ```
 
-but you can not get them with the general token
+but you can not get it with the general token
 
 ```bash
 $ BT=$(oidc-token -s openid test.vo)

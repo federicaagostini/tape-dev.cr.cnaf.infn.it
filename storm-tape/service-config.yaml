@@ -11,6 +11,13 @@ storage-areas:
     - fqan: /test.vo/xfers/Role=NULL/Capability=NULL
     - fqan: /test.vo/xfers
     - x509-subject: CN=Federica Agostini fagostin@infn.it,O=Istituto Nazionale di Fisica Nucleare,C=IT,DC=tcs,DC=terena,DC=org
+  - description: Archiveinfo aperations allowed to storage.poll:/ of iam-dev
+    actions:
+    - archiveinfo
+    principals:
+    - jwt-scope:
+        iss: https://iam-dev.cloud.cnaf.infn.it/
+        scope: storage.poll:/
 - name: dteam
   root: /tmp/disk/dteam
   access-point: /dteam
@@ -22,6 +29,13 @@ storage-areas:
         scope: storage.stage:/
     - fqan: /dteam
     - x509-subject: CN=Federica Agostini fagostin@infn.it,O=Istituto Nazionale di Fisica Nucleare,C=IT,DC=tcs,DC=terena,DC=org
+  - description: Archiveinfo aperations allowed to storage.poll:/ of dteam
+    actions:
+    - archiveinfo
+    principals:
+    - jwt-scope:
+        iss: https://dteam-auth.cern.ch/
+        scope: storage.poll:/
 
 telemetry:
   service-name: storm-tape:api
